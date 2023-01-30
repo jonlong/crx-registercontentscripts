@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "CRXJS registerContentScripts demo",
+  "version": "1.0.0",
+  "action": { "default_popup": "popup.html" },
+  "permissions": ["activeTab", "scripting"],
+  "optional_host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  }
+}
